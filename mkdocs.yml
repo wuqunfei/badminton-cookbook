@@ -1,0 +1,52 @@
+site_name: badminton-cookbook
+repo_url: https://github.com/wuqunfei/badminton-cookbook
+site_url: https://wuqunfei.github.io/badminton-cookbook
+site_description: A badminton master cookbook created by AI Agent
+site_author: Qunfei Wu
+edit_uri: edit/main/docs/
+repo_name: wuqunfei/badminton-cookbook
+copyright: Maintained by <a href="https://wuqunfei.com">wuqunfei</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["badminton_cookbook"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wuqunfei/badminton-cookbook
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/badminton-cookbook
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
